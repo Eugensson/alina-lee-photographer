@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Mulish, Playfair_Display } from "next/font/google";
 
 import { Cursor } from "@/components/cursor";
@@ -43,6 +44,7 @@ export default function RootLayout({
           {children}
           <Cursor />
         </CursorProvider>
+        <Analytics />
       </body>
     </html>
   );
