@@ -21,3 +21,12 @@ export const SOCIAL_LINKS = [
   { name: "Instagram", href: "https://www.instagram.com", icon: ImInstagram },
   { name: "Youtube", href: "https://www.youtube.com", icon: ImYoutube },
 ];
+
+export const PORTFOLIO_LIST = [
+  { name: "Portfolio image", path: "/assets/portfolio/1.jpg" },
+  { name: "Portfolio image", path: "/assets/portfolio/2.jpg" },
+  { name: "Portfolio image", path: "/assets/portfolio/3.jpg" },
+  { name: "Portfolio image", path: "/assets/portfolio/4.jpg" },
+  { name: "Portfolio image", path: "/assets/portfolio/5.jpg" },
+  { name: "Portfolio image", path: "/assets/portfolio/6.jpg" },
+];

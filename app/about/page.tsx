@@ -4,8 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
+import { cn } from "@/lib/utils";
 import { transition } from "@/lib/transition";
 import { useCursorContext } from "@/hooks/use-cursor-context";
 
@@ -55,9 +56,17 @@ const About = () => {
               Explore my portfolio to see how I bring visions to life through
               photography.
             </p>
-            <Button asChild variant="custom" size="custom">
-              <Link href="/portfolio">View my work</Link>
-            </Button>
+            <Link
+              href="/portfolio"
+              className={cn(
+                buttonVariants({
+                  variant: "custom",
+                  size: "custom",
+                })
+              )}
+            >
+              View my work
+            </Link>
           </motion.div>
         </div>
       </div>

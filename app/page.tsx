@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { motion } from "motion/react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
+import { cn } from "@/lib/utils";
 import { transition } from "@/lib/transition";
 import { useCursorContext } from "@/hooks/use-cursor-context";
 
@@ -34,9 +35,18 @@ const Home = () => {
         <p className="text-2xl lg:text-4xl font-primary mb-4 lg:mb-12">
           Los Angeles, CA
         </p>
-        <Button asChild variant="custom" size="custom" className="w-47 mb-7">
-          <Link href="/contact">hire me</Link>
-        </Button>
+        <Link
+          href="/contact"
+          className={cn(
+            buttonVariants({
+              variant: "custom",
+              size: "custom",
+            }),
+            "w-47 mb-7"
+          )}
+        >
+          hire me
+        </Link>
       </motion.div>
       <div className="flex justify-end h-full">
         <motion.div
