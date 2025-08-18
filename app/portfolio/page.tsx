@@ -23,7 +23,7 @@ const Portfolio = () => {
       className="h-full container relative flex flex-col justify-center"
     >
       <div className="container h-full relative">
-        <div className="h-full flex flex-col lg:flex-row justify-center items-start gap-x-8 text-center lg:text-left pt-24 lg:pt-36 pb-8">
+        <div className="h-full flex flex-col lg:flex-row justify-center items-start gap-x-8 text-center lg:text-left pt-120 lg:pt-36 pb-8">
           <motion.div
             initial={{ opacity: 0, y: "-80%" }}
             animate={{ opacity: 1, y: 0 }}
